@@ -2,6 +2,7 @@
 import './App.css'
 import Heading from './components/Heading'
 import Section from './components/Section'
+import Counter from './components/Counter'
 function App() {
  
   return (
@@ -10,6 +11,7 @@ function App() {
       <Section >
         <p>My paragraph</p>
       </Section>
+      <Counter />
       
     </div>
   )

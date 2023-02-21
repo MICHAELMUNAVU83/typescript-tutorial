@@ -1,9 +1,11 @@
 
 import './App.css'
+import { useState } from 'react'
 import Heading from './components/Heading'
 import Section from './components/Section'
 import Counter from './components/Counter'
 function App() {
+  const [count, setCount] = useState<number>(0)
  
   return (
     <div className="App">
@@ -11,7 +13,9 @@ function App() {
       <Section >
         <p>My paragraph</p>
       </Section>
-      <Counter />
+      <Counter setCount={setCount} >
+      count={count}
+      </Counter>
       
     </div>
   )
